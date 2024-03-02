@@ -1,0 +1,11 @@
+Package: MATH4753KS24
+Type: Package
+Title: MATH4753 Lab functions
+Version: 0.1.0
+Author: Kaleigh Smith
+Maintainer: Kaleigh Smith <kaleigh.a.smith-1@ou.edu>
+Description: This will be a package for lab functions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.0
