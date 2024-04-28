@@ -1,0 +1,82 @@
+---
+title: "Vignette for Kaleigh's package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753KS24)
+```
+
+## Vignette Introduction
+
+This is the vignette for my MATH4753 package. 
+
+This package was created so that I could keep a documentation of some of the functions I've used throughout the semester. 
+
+## 1st function: function plotter
+
+The first function is the function plotter. It literally just plots given functions accoridng to the values inputed. 
+
+```{r}
+myplot(x=1:10)
+```
+
+## 2nd function: central limit thereom
+
+The second function I have is the central limit function (cltu). The central limit theorem (CLT) states that the distribution of sample means approximates a normal distribution as the sample size gets larger, regardless of the population's distribution. The function plots a histogram of the sample mean given a sample size.
+
+```{r}
+ mycltu(n=20,iter=100000)
+```
+
+## 3rd function: myboot2
+
+The third function I have is myboot2. It is a bootstrap function. Bootstrapping statistics is a form of hypothesis testing that involves resampling a single data set to create a multitude of simulated samples. Those samples are used to calculate standard errors, confidence intervals and for hypothesis testing.
+The funtion produces a histogram of bootstrap sample statistics.
+
+```{r}
+myboot2(iter=1000, x=20, fun = "mean", alpha=0.05, cx=1.5)
+```
+
+## 4th function: myquad
+
+The fourth function I have is the myquad function. It is just a quadratic function which plots values given the input for x.
+
+```{r}
+myquad(x = 1:10)
+```
+
+## 5th function: ntickets
+
+My fifth function is ntickets. This function is used for a hypothetical airline seat optimization problem and how many tickets should be sold for the flight.
+
+```{r}
+ ntickets(N=400, gamma = 0.2, p=0.95)
+```
+
+
+Those are my main 4 functions. 
+
+## dataset: fire
+
+I also have one dataset in the package. It is called fire. It gives the distance a fire is from the nearest fire station, and also measures how much damage was caused by the fire.
+
+```{r}
+fire
+```
+
+
+
+
+
